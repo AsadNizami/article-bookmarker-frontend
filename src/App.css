@@ -1,0 +1,41 @@
+nav {
+    margin-bottom: 20px;
+}
+
+nav button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #005fa3;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+.auth-form p {
+    margin-top: 15px;
+}
+
+.auth-form button {
+    background: none;
+    border: none;
+    color: #00aaff;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.auth-form button:hover {
+    color: #0077cc;
+}

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import SearchPage from './components/SearchPage';
-import AuthForm from './components/AuthForm'; 
+import AuthForm from './components/AuthForm';
 import UserArticles from './components/UserArticle';
+import './App.css';
 
 const BASE_URL = 'https://article-bookmarker.onrender.com'; // 'http://127.0.0.1:8000';  //
 
@@ -31,7 +32,7 @@ function App() {
             switch (currentView) {
                 case VIEWS.REGISTER:
                     return (
-                        <div>
+                        <div className="auth-form">
                             <h2>Register</h2>
                             <AuthForm type="register" baseUrl={BASE_URL} onAuthSuccess={handleAuthSuccess} />
                             <p>
@@ -45,7 +46,7 @@ function App() {
                 case VIEWS.LOGIN:
                 default:
                     return (
-                        <div>
+                        <div className="auth-form">
                             <h2>Login</h2>
                             <AuthForm type="login" baseUrl={BASE_URL} onAuthSuccess={handleAuthSuccess} />
                             <p>
@@ -86,7 +87,7 @@ function App() {
     };
 
     return (
-        <div>
+        <div className="container">
             {renderView()}
         </div>
     );
